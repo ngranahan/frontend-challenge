@@ -1,0 +1,103 @@
+/* GLOBAL STYLES */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+a {
+    color: #76c2af !important;
+}
+a:hover {
+    color: #63998c !important;
+}
+
+
+/* HEADER STYLES */
+header {
+    background: #fce654 url(assets/images/header.jpg) top no-repeat;
+    height: 200px;
+    margin: 0;
+}
+
+
+/* MAIN CONTENT STYLES */
+h1 {
+    font-family: 'Anton', sans-serif;
+    margin-top: 10px !important;
+}
+#message {
+    background: rgba(118, 194, 175, .6);
+    padding: 5px;
+}
+#input-panel {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #72797a;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+input, input:active, input:focus {
+    border: none;
+    outline: none;
+}
+#search {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#search:hover, #close:hover {
+    cursor: pointer;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+#station-info-wrapper {
+    background: rgba(118, 194, 175, .7);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 250px;
+    height: 150px;
+    bottom: 40px;
+    left: 50px;
+    z-index: 5;
+    padding: 10px
+}
+#close {
+    right: 5px;
+    top: 5px;
+    z-index: 6;
+}
+
+
+/* FOOTER STYLES */
+footer {
+    height: 100px;
+    background: #fce654;
+    
+}
+span {
+    color: #968a3c;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* FLEXBOX STICKY FOOTER */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+    margin-top: 60px;
+}
