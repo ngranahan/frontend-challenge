@@ -27,7 +27,10 @@
                         <a href="https://www.rideindego.com/">Indego</a> bike share stations, available bikes, and some tips about today's weather.</p>
                 </div>
                 <div class="col l1"></div>
-                <div id="weather-data" class="col m12 l3"></div>
+                <div id="weather-data" class="col m12 l3">
+                    <h2 id="temp"></h2>
+                    <p id="weather-message"></p>
+                </div>
             </div>
             <div class="row">
                 <div id="map-container" class="col s12 relative">
@@ -37,7 +40,8 @@
                     </div>
                     <div id="station-info-wrapper" class="absolute hide">
                         <i id="close" class="material-icons absolute">close</i>
-                        <div id="station-info"></div>
+                        <p id="station-address"></p>
+                        <p id="bikes-available"></p>
                     </div>
                     <div id="map"></div>
                 </div>
@@ -48,6 +52,10 @@
     <footer class="relative">
         <span class="absolute">Nora Granahan</span>
     </footer>
+
+    <!-- Render Google Map -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VPkBx3IHsp4bbybvOU91ZIOS_BfYoug&callback=renderMap">
+    </script>
 
 </body>
 
