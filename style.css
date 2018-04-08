@@ -101,3 +101,15 @@ main {
     flex: 1 0 auto;
     margin-top: 60px;
 }
+
+@media screen and (max-width: 600px) {
+
+    .col {
+        padding: 10px 0 !important;
+    }
+
+    #input-panel {
+        top: -30px;
+        width: 100%;
+    }
+}
