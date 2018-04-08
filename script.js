@@ -85,7 +85,7 @@ function geocodeAddr(geocoder, map) {
 function getWeather(lat, lng) {
 
     var apiKey = "4ab72bec89322fad122f8cd475d25439"
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&units=imperial&appid=" + apiKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lng + "&units=imperial&appid=" + apiKey;
 
     $.ajax({
         url: queryURL,
