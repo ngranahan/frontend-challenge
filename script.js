@@ -44,13 +44,23 @@ function geocodeAddr(geocoder, map) {
     // Adds Indego stations as data layer to map
     map.data.loadGeoJson(
         'https://www.rideindego.com/stations/json/');
-    map.data.setStyle({
-        icon: "assets/images/bike-icon.png"
+
+    map.data.setStyle(function(feature) {
+        var icon;
+        if (feature.getProperty("bikesAvailable") < 3) {
+            icon = "assets/images/bike-icon-low.png";
+        } else if (feature.getProperty("bikesAvailable") === 0 ) {
+            icon = "assets/images/bike-icon-empty.png";
+        } else {
+            icon = "assets/images/bike-icon.png";
+        }
+        return ({
+            icon: icon
+        });
     });
 
     // DISPLAYS BIKE STATION INFORMATION
     map.data.addListener('click', function (event) {
-        console.log("station click");
         var stationInfo = $("#station-info-wrapper");
         var stationAddr = $("#station-address");
         var bikes = $("#bikes-available");
