@@ -14,6 +14,11 @@ function renderMap() {
         geocodeAddr(geocoder, map)
     }
     searchBtn.on("click", searchMap);
+    $("#address").keydown(function(e) {
+        if (e.keyCode == 13) {
+            searchMap()
+        }
+    })
 }
 
 // Geocoder function locates lat and long for given location and calls weather function, passing in lat and long, to return weather data for given location.
@@ -39,6 +44,7 @@ function geocodeAddr(geocoder, map) {
         } else {
             console.log("Error: " + status);
         }
+        $("#address").val("");
     });
 
     // Adds Indego stations as data layer to map

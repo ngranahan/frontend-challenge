@@ -42,10 +42,14 @@ h1 {
     font-family: 'Roboto', 'sans-serif';
     line-height: 30px;
     padding-left: 10px;
+    width: 50%;
 }
 input, input:active, input:focus {
     border: none;
     outline: none;
+}
+input {
+    width: 100%;
 }
 #search {
     right: 5px;
