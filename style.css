@@ -80,6 +80,10 @@ input {
     top: 5px;
     z-index: 6;
 }
+.icon {
+    margin: 0 10px;
+    width: 30px;
+}
 
 
 /* FOOTER STYLES */
@@ -88,7 +92,7 @@ footer {
     background: #fce654;
     
 }
-span {
+footer span {
     color: #968a3c;
     left: 50%;
     top: 50%;
@@ -104,6 +108,7 @@ body {
 main {
     flex: 1 0 auto;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 600px) {

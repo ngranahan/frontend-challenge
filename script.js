@@ -7,7 +7,9 @@ function renderMap() {
     var geocoder = new google.maps.Geocoder();
     var map = new google.maps.Map(displayMap, {
         zoom: 16,
-        center: punkAve
+        center: punkAve,
+        mapTypeControl: false,
+        fullscreenControl: false
     });
 
     function searchMap() {
@@ -65,7 +67,7 @@ function geocodeAddr(geocoder, map) {
         });
     });
 
-    // DISPLAYS BIKE STATION INFORMATION
+    // Displays bike station information
     map.data.addListener('click', function (event) {
         var stationInfo = $("#station-info-wrapper");
         var stationAddr = $("#station-address");
