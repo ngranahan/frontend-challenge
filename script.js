@@ -1,6 +1,5 @@
 // Initial function to render map. Calls other functions that enable user to interact with map.
 function renderMap() {
-    console.log("working");
     var punkAve = { lat: 39.934, lng: -75.158 };
     var displayMap = $("#map").get(0);
     var searchBtn = $("#search");
@@ -27,13 +26,11 @@ function renderMap() {
 // Geocoder function locates lat and long for given location and calls weather function, passing in lat and long, to return weather data for given location.
 function geocodeAddr(geocoder, map) {
     var address = $("#address").val().trim();
-    console.log(address);
     geocoder.geocode({ "address": address }, function (results, status) {
         if (status === "OK") {
             var lat = results[0].geometry.location.lat();
             var lng = results[0].geometry.location.lng();
             var location = { lat: lat, lng: lng }
-            console.log(location);
 
             map.setCenter(results[0].geometry.location);
 

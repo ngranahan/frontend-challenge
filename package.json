@@ -15,11 +15,5 @@
   "bugs": {
     "url": "https://github.com/punkave/frontend-challenge/issues"
   },
-  "homepage": "https://github.com/punkave/frontend-challenge#readme",
-    "scripts": {
-      "start": "micro"
-    },
-    "dependencies": {
-      "micro": "latest"
-    }
+  "homepage": "https://github.com/punkave/frontend-challenge#readme"
 }
