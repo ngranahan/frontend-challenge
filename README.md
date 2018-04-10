@@ -1,3 +1,20 @@
+## Frontend Challenge Submission - Nora Granahan
+
+App Functionality:
+When a user searches for a specific location in Philadelphia, the map will return their that location along with nearby Indego bike stations. The user's search also triggers a snapshot of the current forecast and a message either wishing them a good bike ride or warning about inclement weather.
+
+Technologies Used:
+* HTML, CSS, JQuery, Materialize
+* Google Maps Javascript API (Geocode, Data layers)
+* Indego GeoJSON Station Status API
+* Open Weather Map API
+* Deployed with Now
+
+Opportunities:
+* Use Google Maps API Places/Autocomplete to offer location hints to user and bias search results to Philadelphia
+* Provide directions to designated station from search location, with option for directions to a different return station
+* Use geolocation to allow user to search by current location
+
 ## P'unk Avenue frontend challenge
 
 Using HTML, CSS, and one of the following:

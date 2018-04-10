@@ -4,6 +4,7 @@ function renderMap() {
     var punkAve = { lat: 39.934, lng: -75.158 };
     var displayMap = $("#map").get(0);
     var searchBtn = $("#search");
+
     var geocoder = new google.maps.Geocoder();
     var map = new google.maps.Map(displayMap, {
         zoom: 16,

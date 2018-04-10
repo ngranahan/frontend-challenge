@@ -82,7 +82,6 @@ input {
 }
 .icon {
     margin: 0 10px;
-    width: 30px;
 }
 
 
@@ -92,12 +91,15 @@ footer {
     background: #fce654;
     
 }
-footer span {
-    color: #968a3c;
+footer a {
+    color: #968a3c !important;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     
+}
+footer a:hover {
+    color: #aa9f5a !important;
 }
 /* FLEXBOX STICKY FOOTER */
 body {
@@ -116,9 +118,15 @@ main {
     .col {
         padding: 10px 0 !important;
     }
-
     #input-panel {
         top: -30px;
         width: 100%;
+    }
+    .icon {
+        width: 25px;
+        margin: 0 5px;
+    }
+    .key{
+        font-size: .8em;
     }
 }

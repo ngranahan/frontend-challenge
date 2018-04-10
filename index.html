@@ -3,7 +3,7 @@
 
 <head>
     <title>Let's Ride</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,21 +47,29 @@
                     <div id="map"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12">
-                    <img src="assets/images/bike-icon.png" alt="Station Full Icon" class="icon"><span>Plenty of Bikes</span>
-                    <img src="assets/images/bike-icon-low.png" alt="Station Full Icon" class="icon"><span>Low on Bikes</span><img src="assets/images/bike-icon-empty.png" alt="Station Full Icon" class="icon"><span>Out of Bikes</span>
+            <div class="row center-align key">
+                <div class="col s4">
+                    <img src="assets/images/bike-icon.png" alt="Station Full Icon" class="icon">
+                    <span>Plenty of Bikes</span>
+                </div>
+                <div class="col s4">
+                    <img src="assets/images/bike-icon-low.png" alt="Station Full Icon" class="icon">
+                    <span>Low on Bikes</span>
+                </div>
+                <div class="col s4">
+                    <img src="assets/images/bike-icon-empty.png" alt="Station Full Icon" class="icon">
+                    <span>Out of Bikes</span>
                 </div>
             </div>
         </div>
     </main>
 
     <footer class="relative">
-        <span class="absolute">Nora Granahan</span>
+        <a href="https://ngranahan.github.io/" class="absolute">Nora Granahan</a>
     </footer>
 
     <!-- Render Google Map -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VPkBx3IHsp4bbybvOU91ZIOS_BfYoug&callback=renderMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0VPkBx3IHsp4bbybvOU91ZIOS_BfYoug&callback=renderMap&libraries=places">
     </script>
 
 </body>
